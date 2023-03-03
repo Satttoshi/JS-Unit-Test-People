@@ -47,7 +47,12 @@ export function isAnyoneOlderThan(people, age) {
 }
 
 export function getFullNamesSortedByAge(people) {
-  return people.slice().sort((a, b) => {
-    return a.age - b.age;
-  });
+  return people
+    .slice()
+    .sort((a, b) => {
+      return a.age - b.age;
+    })
+    .map((person) => {
+      return person.firstName + " " + person.lastName;
+    });
 }
