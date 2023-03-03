@@ -2,18 +2,52 @@ export function getFirstNames(people) {
   return people.map((person) => person.firstName);
 }
 
-export function getFullNames(people) {}
+export function getFullNames(people) {
+  return people.map((person) => person.firstName + " " + person.lastName);
+}
 
-export function getNameAndAge(people) {}
+export function getNameAndAge(people) {
+  return people.map((person) => {
+    return { firstName: person.firstName, age: person.age };
+  });
+}
 
-export function getPeopleByAge(people, age) {}
+export function getPeopleByAge(people, age) {
+  return people.find((arr) => {
+    return arr.age === age;
+  });
+}
 
-export function getPeopleNamesOlderThan(people, age) {}
+export function getPeopleNamesOlderThan(people, age) {
+  return people
+    .filter((arr) => {
+      return arr.age > age;
+    })
+    .map((arr) => {
+      return arr.firstName + " " + arr.lastName;
+    });
+}
 
-export function getPeopleByLastName(people, lastName) {}
+export function getPeopleByLastName(people, lastName) {
+  return people.find((arr) => {
+    return arr.lastName === lastName;
+  });
+}
 
-export function findPersonById(people, id) {}
+export function findPersonById(people, id) {
+  return people.find((arr) => {
+    return arr.id === id;
+  });
+}
 
-export function isAnyoneOlderThan(people, age) {}
+export function isAnyoneOlderThan(people, age) {
+  return people.some((arr) => {
+    return arr.age > age;
+  });
+}
 
-export function getFullNamesSortedByAge(people) {}
+export function getFullNamesSortedByAge(people) {
+  return people.slice().sort((a, b) => {
+    return a.age - b.age;
+  });
+}
