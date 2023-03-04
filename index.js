@@ -68,3 +68,6 @@ console.log(sonsOfTheForest);
 
 const praiseLordGaben = "Gabe Newell";
 console.log(praiseLordGaben);
+
+const praiseLordGaben2 = "Gabe Newell";
+console.log(praiseLordGaben2);
