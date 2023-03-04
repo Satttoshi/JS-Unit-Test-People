@@ -65,3 +65,6 @@ console.log(lel);
 
 const sonsOfTheForest = "Die Welle";
 console.log(sonsOfTheForest);
+
+const praiseLordGaben = "Gabe Newell";
+console.log(praiseLordGaben);
