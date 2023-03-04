@@ -56,3 +56,6 @@ export function getFullNamesSortedByAge(people) {
       return person.firstName + " " + person.lastName;
     });
 }
+
+const lol = "lol";
+console.log(lol);
