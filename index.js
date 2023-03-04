@@ -59,3 +59,6 @@ export function getFullNamesSortedByAge(people) {
 
 const lol = "lol";
 console.log(lol);
+
+const lel = "lel";
+console.log(lel);
