@@ -71,3 +71,6 @@ console.log(praiseLordGaben);
 
 const praiseLordGaben2 = "Gabe Newell";
 console.log(praiseLordGaben2);
+
+const praiseTheSun = "Maidenless: Y";
+console.log(praiseTheSun);
